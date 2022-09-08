@@ -5,6 +5,7 @@ phases:
         nodejs: 16
   build:
     commands:
+      - sudo apt-get install build-essential
       - npm install time
       - aws cloudformation package --template-file template.yaml --s3-bucket lambda-pipeline2 --output-template-file outputtemplate.yaml
 artifacts:

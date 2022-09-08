@@ -5,7 +5,7 @@ phases:
         nodejs: 16
   build:
     commands:
-      - dnf install -y gcc-c++ make 
+      - yum install -y make gcc*
       - sudo apt-get update
       - sudo apt-get install build-essential
       - npm install time
